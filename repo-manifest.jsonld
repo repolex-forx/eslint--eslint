@@ -537,8 +537,9 @@
     {
       "@id": "https://repolex.ai/r/eslint/eslint/commit/4e6c4ac042e321da8fc29ce53ed03c86dcaa44a7",
       "git:hexsha": "4e6c4ac042e321da8fc29ce53ed03c86dcaa44a7",
-      "repolex:parseStatus": "pending",
-      "git:tagName": "v10.0.0"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "v10.0.0",
+      "repolex:parsedAt": "2026-04-10T04:31:35.127518+00:00"
     },
     {
       "@id": "https://repolex.ai/r/eslint/eslint/commit/d6ed1f846f6250d8d776f379380a71e304f4f9e5",
