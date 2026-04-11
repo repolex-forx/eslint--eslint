@@ -1,0 +1,7 @@
+[2026-04-11T13:44:37Z] === AST ITERATION 1 START | repo=eslint/eslint sha=60a78e79 ===
+[2026-04-11T13:44:37Z] [iter=1] PHASE START: ast repo=eslint/eslint sha=60a78e79
+[2026-04-11T13:44:37Z] [iter=1] Building AST aggregate chunks
+[2026-04-11T14:00:59Z] [iter=1] AST chunks built count=2 triples=10565042
+[2026-04-11T14:00:59Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/60a78e7964fbb79c0e55e86845a87e0eb22d4de3/.complete
+[2026-04-11T14:00:59Z] [iter=1] PHASE END: ast elapsed_s=982 elapsed_min=16.4
+[2026-04-11T14:00:59Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
