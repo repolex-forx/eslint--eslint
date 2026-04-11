@@ -2360,8 +2360,9 @@
     {
       "@id": "https://repolex.ai/r/eslint/eslint/commit/edf232b680390013c68f081a5e41843bcf2dd18f",
       "git:hexsha": "edf232b680390013c68f081a5e41843bcf2dd18f",
-      "repolex:parseStatus": "pending",
-      "git:tagName": "v9.29.0"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "v9.29.0",
+      "repolex:parsedAt": "2026-04-11T05:57:25.385319+00:00"
     },
     {
       "@id": "https://repolex.ai/r/eslint/eslint/commit/41a871cf43874e2f27ad08554c7900daf0e94b06",
