@@ -7,14 +7,18 @@
     "lib/rules/multiline-comment-style.js",
     "lib/rules/no-script-url.js",
     "lib/rules/no-self-compare.js",
+    "lib/rules/no-tabs.js",
     "lib/rules/no-underscore-dangle.js",
     "lib/rules/no-unsafe-optional-chaining.js",
     "tests/lib/cli.js",
     "tests/lib/eslint/eslint.js",
+    "tests/lib/linter/linter.js",
     "tests/lib/rules/capitalized-comments.js",
     "tests/lib/rules/curly.js",
     "tests/lib/rules/space-before-blocks.js",
-    "tests/performance/jshint.js"
+    "tests/lib/shared/config-validator.js",
+    "tests/performance/jshint.js",
+    "tests/tools/config-rule.js"
   ],
   "completed_types": [],
   "stats": {
@@ -22,13 +26,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/f66890ba0f778e46b6dd6ab6e88d49ff0bf1f78b.nq.gz",
     "call_sites": 40864,
     "import_statements": 0,
-    "call_targets_resolved": 242,
+    "call_targets_resolved": 290,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 4824,
+    "errors": 9725,
     "extends_clauses": 9,
     "implements_clauses": 0,
     "import_modules_denormalized": 0,
@@ -36,5 +40,5 @@
     "extends_class_denormalized": 9,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14407
+  "elapsed_seconds": 14406
 }
