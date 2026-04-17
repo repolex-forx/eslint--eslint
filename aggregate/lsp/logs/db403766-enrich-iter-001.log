@@ -1,0 +1,16 @@
+[2026-04-17T18:21:31Z] === ENRICH ITERATION 1 START | repo=eslint/eslint sha=db403766 ===
+[2026-04-17T18:21:31Z] [iter=1] PHASE START: enrich repo=eslint/eslint sha=db403766 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/db403766-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/db40376637554d10d7b648588338fd796407885e.nq.gz
+[2026-04-17T18:22:37Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-17T18:24:05Z] [iter=1] AST store loaded triples=8615566 load_secs=84 mem_mb=1055 MB
+[2026-04-17T18:24:05Z] [iter=1] Step 2: Finding LSP targets mem_mb=1055 MB
+[2026-04-17T18:24:08Z] [iter=1] LSP targets found call_sites=39555 imports=0 extends=7 implements=0 secs=3
+[2026-04-17T18:24:08Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1055 MB
+[2026-04-17T18:24:59Z] [iter=1] Position index built positions=626508 nodes_with_types=675466 secs=50 mem_mb=1369 MB
+[2026-04-17T18:24:59Z] [iter=1] Step 3: Starting LSP resolution mem_mb=1369 MB already_completed_types=[] already_completed_files=0
+[2026-04-17T18:24:59Z] [iter=1] Resolving target type target_type=call_site count=39555
+[2026-04-17T18:24:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.5 files_done=0 resolved=0 errors=0 current=tests/lib/cli-engine/cli-engine.js
+[2026-04-17T20:26:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=124.5 files_done=1 resolved=63 errors=2154 current=tests/lib/linter/linter.js
+[2026-04-17T22:21:36Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=1 new_files_this_iter=1 mem_mb=1407 MB
+[2026-04-17T22:21:36Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/db40376637554d10d7b648588338fd796407885e.nq.gz triples=17351
+[2026-04-17T22:21:36Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-04-17T22:21:36Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14405 elapsed_min=240.1 files_completed=1

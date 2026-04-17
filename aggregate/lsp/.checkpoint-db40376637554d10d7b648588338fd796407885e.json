@@ -1,0 +1,27 @@
+{
+  "commit_sha": "db40376637554d10d7b648588338fd796407885e",
+  "completed_files": [
+    "tests/lib/cli-engine/cli-engine.js"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/eslint/eslint/lsp/db40376637554d10d7b648588338fd796407885e",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/db40376637554d10d7b648588338fd796407885e.nq.gz",
+    "call_sites": 39555,
+    "import_statements": 0,
+    "call_targets_resolved": 84,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 4211,
+    "extends_clauses": 7,
+    "implements_clauses": 0,
+    "import_modules_denormalized": 0,
+    "import_symbols_denormalized": 0,
+    "extends_class_denormalized": 7,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 14404
+}
