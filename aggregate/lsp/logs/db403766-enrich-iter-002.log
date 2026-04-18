@@ -1,0 +1,18 @@
+[2026-04-17T22:41:54Z] === ENRICH ITERATION 2 START | repo=eslint/eslint sha=db403766 ===
+[2026-04-17T22:41:54Z] [iter=2] PHASE START: enrich repo=eslint/eslint sha=db403766 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/db403766-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/db40376637554d10d7b648588338fd796407885e.nq.gz
+[2026-04-17T22:42:40Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-04-17T22:44:07Z] [iter=2] AST store loaded triples=8615566 load_secs=83 mem_mb=1047 MB
+[2026-04-17T22:44:07Z] [iter=2] Step 2: Finding LSP targets mem_mb=1047 MB
+[2026-04-17T22:44:10Z] [iter=2] LSP targets found call_sites=39555 imports=0 extends=7 implements=0 secs=3
+[2026-04-17T22:44:10Z] [iter=2] Loaded checkpoint partial graph triples=17351
+[2026-04-17T22:44:11Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1047 MB
+[2026-04-17T22:45:03Z] [iter=2] Position index built positions=626508 nodes_with_types=675466 secs=52 mem_mb=1438 MB
+[2026-04-17T22:45:03Z] [iter=2] Step 3: Starting LSP resolution mem_mb=1438 MB already_completed_types=[] already_completed_files=1
+[2026-04-17T22:45:03Z] [iter=2] Resolving target type target_type=call_site count=39555
+[2026-04-17T22:45:03Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=3.1 files_done=0 resolved=0 errors=0 current=tests/lib/linter/linter.js
+[2026-04-18T01:52:41Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=190.8 files_done=1 resolved=11 errors=3306 current=tests/lib/rules/utils/ast-utils.js
+[2026-04-18T02:16:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=214.9 files_done=2 resolved=40 errors=3734 current=tests/lib/rules/indent.js
+[2026-04-18T02:42:10Z] [iter=2] CHECKPOINT TRIGGERED elapsed_min=240.3 files_completed=3 new_files_this_iter=2 mem_mb=1455 MB
+[2026-04-18T02:42:10Z] [iter=2] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/db40376637554d10d7b648588338fd796407885e.nq.gz triples=25533
+[2026-04-18T02:42:10Z] [iter=2] Checkpoint written, exiting with code 7
+[2026-04-18T02:42:10Z] [iter=2] PHASE END: enrich (checkpointed) elapsed_s=14415 elapsed_min=240.3 files_completed=3
