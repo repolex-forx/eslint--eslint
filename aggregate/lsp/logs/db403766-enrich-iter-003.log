@@ -1,0 +1,22 @@
+[2026-04-18T02:53:48Z] === ENRICH ITERATION 3 START | repo=eslint/eslint sha=db403766 ===
+[2026-04-18T02:53:48Z] [iter=3] PHASE START: enrich repo=eslint/eslint sha=db403766 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/db403766-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/db40376637554d10d7b648588338fd796407885e.nq.gz
+[2026-04-18T02:54:59Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-18T02:56:25Z] [iter=3] AST store loaded triples=8615566 load_secs=82 mem_mb=1060 MB
+[2026-04-18T02:56:25Z] [iter=3] Step 2: Finding LSP targets mem_mb=1060 MB
+[2026-04-18T02:56:27Z] [iter=3] LSP targets found call_sites=39555 imports=0 extends=7 implements=0 secs=3
+[2026-04-18T02:56:28Z] [iter=3] Loaded checkpoint partial graph triples=25533
+[2026-04-18T02:56:29Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1060 MB
+[2026-04-18T02:57:15Z] [iter=3] Position index built positions=626508 nodes_with_types=675466 secs=46 mem_mb=1423 MB
+[2026-04-18T02:57:15Z] [iter=3] Step 3: Starting LSP resolution mem_mb=1423 MB already_completed_types=[] already_completed_files=3
+[2026-04-18T02:57:15Z] [iter=3] Resolving target type target_type=call_site count=39555
+[2026-04-18T02:57:15Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=3.5 files_done=0 resolved=0 errors=0 current=tests/lib/rules/indent.js
+[2026-04-18T04:31:20Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=97.5 files_done=1 resolved=1 errors=1639 current=lib/rules/no-unused-vars.js
+[2026-04-18T04:34:56Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=101.1 files_done=2 resolved=1 errors=1702 current=tests/performance/jshint.js
+[2026-04-18T06:20:24Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=206.6 files_done=3 resolved=139 errors=3542 current=lib/rules/index.js
+[2026-04-18T06:43:20Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=229.5 files_done=5 resolved=140 errors=3942 current=tests/lib/cli-engine/formatters/tap.js
+[2026-04-18T06:46:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=232.5 files_done=6 resolved=140 errors=3993 current=lib/init/config-initializer.js
+[2026-04-18T06:52:08Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=238.3 files_done=7 resolved=158 errors=4095 current=tests/lib/rules/prefer-exponentiation-operator.js
+[2026-04-18T06:53:48Z] [iter=3] CHECKPOINT TRIGGERED elapsed_min=240.0 files_completed=10 new_files_this_iter=7 mem_mb=1448 MB
+[2026-04-18T06:53:48Z] [iter=3] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/db40376637554d10d7b648588338fd796407885e.nq.gz triples=41896
+[2026-04-18T06:53:49Z] [iter=3] Checkpoint written, exiting with code 7
+[2026-04-18T06:53:49Z] [iter=3] PHASE END: enrich (checkpointed) elapsed_s=14401 elapsed_min=240.0 files_completed=10
