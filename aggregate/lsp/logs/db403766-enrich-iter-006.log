@@ -1,0 +1,65 @@
+[2026-04-18T15:46:19Z] === ENRICH ITERATION 6 START | repo=eslint/eslint sha=db403766 ===
+[2026-04-18T15:46:19Z] [iter=6] PHASE START: enrich repo=eslint/eslint sha=db403766 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/db403766-enrich-iter-006.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/db40376637554d10d7b648588338fd796407885e.nq.gz
+[2026-04-18T15:47:08Z] [iter=6] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-04-18T15:48:36Z] [iter=6] AST store loaded triples=8615566 load_secs=84 mem_mb=1053 MB
+[2026-04-18T15:48:36Z] [iter=6] Step 2: Finding LSP targets mem_mb=1053 MB
+[2026-04-18T15:48:38Z] [iter=6] LSP targets found call_sites=39555 imports=0 extends=7 implements=0 secs=3
+[2026-04-18T15:48:42Z] [iter=6] Loaded checkpoint partial graph triples=94226
+[2026-04-18T15:48:43Z] [iter=6] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1053 MB
+[2026-04-18T15:49:33Z] [iter=6] Position index built positions=626508 nodes_with_types=675466 secs=50 mem_mb=1573 MB
+[2026-04-18T15:49:33Z] [iter=6] Step 3: Starting LSP resolution mem_mb=1573 MB already_completed_types=[] already_completed_files=53
+[2026-04-18T15:49:33Z] [iter=6] Resolving target type target_type=call_site count=39555
+[2026-04-18T15:49:33Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=3.2 files_done=0 resolved=0 errors=0 current=tests/lib/rules/keyword-spacing.js
+[2026-04-18T16:19:46Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=33.5 files_done=1 resolved=0 errors=511 current=lib/rules/wrap-iife.js
+[2026-04-18T16:21:19Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=35.0 files_done=2 resolved=0 errors=537 current=lib/rules/no-throw-literal.js
+[2026-04-18T16:23:13Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=36.9 files_done=4 resolved=0 errors=569 current=tests/lib/options.js
+[2026-04-18T16:31:08Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=44.8 files_done=5 resolved=0 errors=702 current=tests/lib/rules/no-unneeded-ternary.js
+[2026-04-18T16:48:05Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=61.8 files_done=7 resolved=27 errors=987 current=lib/rules/curly.js
+[2026-04-18T16:51:43Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=65.4 files_done=8 resolved=28 errors=1048 current=tests/fixtures/rules/indent/indent-valid-fixture-1.js
+[2026-04-18T16:55:43Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=69.4 files_done=9 resolved=28 errors=1115 current=tests/fixtures/rules/indent-legacy/indent-valid-fixture-1.js
+[2026-04-18T16:59:42Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=73.4 files_done=10 resolved=28 errors=1182 current=tests/lib/init/source-code-utils.js
+[2026-04-18T17:05:17Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=79.0 files_done=11 resolved=30 errors=1276 current=tests/lib/config/flat-config-array.js
+[2026-04-18T17:10:38Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=84.3 files_done=12 resolved=31 errors=1366 current=lib/linter/safe-emitter.js
+[2026-04-18T17:13:32Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=87.2 files_done=14 resolved=34 errors=1415 current=tests/lib/rules/indent-legacy.js
+[2026-04-18T17:20:57Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=94.6 files_done=15 resolved=37 errors=1540 current=lib/rules/newline-per-chained-call.js
+[2026-04-18T17:21:44Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=95.4 files_done=16 resolved=37 errors=1553 current=tests/lib/rules/no-unreachable-loop.js
+[2026-04-18T17:22:19Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=96.0 files_done=17 resolved=39 errors=1563 current=tests/lib/rules/object-curly-newline.js
+[2026-04-18T17:22:51Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=96.5 files_done=18 resolved=39 errors=1572 current=tests/lib/shared/config-validator.js
+[2026-04-18T17:29:20Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=103.0 files_done=19 resolved=39 errors=1681 current=tests/lib/rules/unicode-bom.js
+[2026-04-18T17:30:45Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=104.4 files_done=21 resolved=39 errors=1705 current=tests/lib/cli-engine/file-enumerator.js
+[2026-04-18T17:43:20Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=117.0 files_done=22 resolved=49 errors=1917 current=lib/rules/indent.js
+[2026-04-18T18:04:57Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=138.6 files_done=23 resolved=55 errors=2281 current=lib/linter/code-path-analysis/code-path-analyzer.js
+[2026-04-18T18:12:23Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=146.1 files_done=24 resolved=59 errors=2406 current=lib/init/config-rule.js
+[2026-04-18T18:14:13Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=147.9 files_done=25 resolved=69 errors=2437 current=tests/lib/rules/brace-style.js
+[2026-04-18T18:16:39Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=150.3 files_done=26 resolved=69 errors=2478 current=lib/rules/no-octal.js
+[2026-04-18T18:18:30Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=152.2 files_done=28 resolved=69 errors=2509 current=lib/rules/radix.js
+[2026-04-18T18:19:49Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=153.5 files_done=29 resolved=70 errors=2531 current=lib/cli-engine/file-enumerator.js
+[2026-04-18T18:24:06Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=157.8 files_done=30 resolved=74 errors=2603 current=lib/rules/sort-vars.js
+[2026-04-18T18:25:10Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=158.9 files_done=31 resolved=74 errors=2621 current=lib/cli.js
+[2026-04-18T18:28:05Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=161.8 files_done=32 resolved=76 errors=2670 current=lib/rules/no-restricted-exports.js
+[2026-04-18T18:28:44Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=162.4 files_done=33 resolved=76 errors=2681 current=tests/lib/linter/rules.js
+[2026-04-18T18:30:17Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=164.0 files_done=34 resolved=76 errors=2707 current=tests/lib/rules/no-setter-return.js
+[2026-04-18T18:34:21Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=168.0 files_done=35 resolved=76 errors=2775 current=tests/lib/rules/no-mixed-requires.js
+[2026-04-18T18:35:36Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=169.3 files_done=37 resolved=77 errors=2796 current=tests/lib/init/config-initializer.js
+[2026-04-18T18:45:54Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=179.6 files_done=38 resolved=82 errors=2969 current=lib/rules/accessor-pairs.js
+[2026-04-18T18:48:28Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=182.1 files_done=39 resolved=84 errors=3012 current=lib/rules/no-loss-of-precision.js
+[2026-04-18T18:51:05Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=184.8 files_done=40 resolved=85 errors=3056 current=lib/rules/no-alert.js
+[2026-04-18T18:51:51Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=185.5 files_done=41 resolved=85 errors=3069 current=lib/rules/max-len.js
+[2026-04-18T18:53:59Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=187.7 files_done=42 resolved=88 errors=3105 current=tests/lib/rules/padded-blocks.js
+[2026-04-18T19:01:29Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=195.2 files_done=44 resolved=88 errors=3231 current=lib/linter/report-translator.js
+[2026-04-18T19:02:55Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=196.6 files_done=45 resolved=98 errors=3255 current=lib/rules/prefer-arrow-callback.js
+[2026-04-18T19:04:46Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=198.4 files_done=46 resolved=98 errors=3286 current=tests/bin/eslint.js
+[2026-04-18T19:15:21Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=209.0 files_done=47 resolved=115 errors=3464 current=lib/rules/semi.js
+[2026-04-18T19:17:47Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=211.5 files_done=48 resolved=119 errors=3505 current=tests/fixtures/code-path-analysis/try--try-finally-2.js
+[2026-04-18T19:18:26Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=212.1 files_done=50 resolved=119 errors=3516 current=tests/lib/init/config-rule.js
+[2026-04-18T19:23:15Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=216.9 files_done=51 resolved=128 errors=3597 current=tests/lib/cli-engine/lint-result-cache.js
+[2026-04-18T19:27:22Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=221.0 files_done=52 resolved=132 errors=3666 current=lib/source-code/token-store/backward-token-comment-cursor.js
+[2026-04-18T19:28:12Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=221.9 files_done=55 resolved=133 errors=3680 current=tests/lib/linter/safe-emitter.js
+[2026-04-18T19:29:16Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=223.0 files_done=56 resolved=133 errors=3698 current=lib/rules/no-restricted-imports.js
+[2026-04-18T19:31:08Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=224.8 files_done=57 resolved=138 errors=3729 current=lib/rules/no-undefined.js
+[2026-04-18T19:31:47Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=225.5 files_done=58 resolved=138 errors=3740 current=tests/lib/linter/source-code-fixer.js
+[2026-04-18T19:45:41Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=239.4 files_done=59 resolved=138 errors=3973 current=lib/rules/no-useless-escape.js
+[2026-04-18T19:46:28Z] [iter=6] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=112 new_files_this_iter=59 mem_mb=1605 MB
+[2026-04-18T19:46:28Z] [iter=6] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/db40376637554d10d7b648588338fd796407885e.nq.gz triples=111499
+[2026-04-18T19:46:30Z] [iter=6] Checkpoint written, exiting with code 7
+[2026-04-18T19:46:30Z] [iter=6] PHASE END: enrich (checkpointed) elapsed_s=14409 elapsed_min=240.1 files_completed=112
