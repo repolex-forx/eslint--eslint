@@ -1,0 +1,26 @@
+[2026-04-18T07:06:02Z] === ENRICH ITERATION 4 START | repo=eslint/eslint sha=db403766 ===
+[2026-04-18T07:06:02Z] [iter=4] PHASE START: enrich repo=eslint/eslint sha=db403766 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/db403766-enrich-iter-004.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/db40376637554d10d7b648588338fd796407885e.nq.gz
+[2026-04-18T07:07:11Z] [iter=4] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-18T07:08:35Z] [iter=4] AST store loaded triples=8615566 load_secs=81 mem_mb=1039 MB
+[2026-04-18T07:08:35Z] [iter=4] Step 2: Finding LSP targets mem_mb=1039 MB
+[2026-04-18T07:08:38Z] [iter=4] LSP targets found call_sites=39555 imports=0 extends=7 implements=0 secs=3
+[2026-04-18T07:08:39Z] [iter=4] Loaded checkpoint partial graph triples=41896
+[2026-04-18T07:08:40Z] [iter=4] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1039 MB
+[2026-04-18T07:09:23Z] [iter=4] Position index built positions=626508 nodes_with_types=675466 secs=44 mem_mb=1402 MB
+[2026-04-18T07:09:23Z] [iter=4] Step 3: Starting LSP resolution mem_mb=1402 MB already_completed_types=[] already_completed_files=10
+[2026-04-18T07:09:23Z] [iter=4] Resolving target type target_type=call_site count=39555
+[2026-04-18T07:09:24Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=3.4 files_done=0 resolved=0 errors=0 current=tests/lib/rules/prefer-exponentiation-operator.js
+[2026-04-18T07:17:10Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=11.1 files_done=1 resolved=0 errors=135 current=tests/lib/source-code/source-code.js
+[2026-04-18T07:58:07Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=52.1 files_done=2 resolved=0 errors=847 current=tests/lib/rules/no-extra-parens.js
+[2026-04-18T08:20:38Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=74.6 files_done=3 resolved=34 errors=1237 current=lib/rules/capitalized-comments.js
+[2026-04-18T08:22:12Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=76.2 files_done=4 resolved=40 errors=1264 current=tests/lib/eslint/eslint.js
+[2026-04-18T10:22:10Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=196.1 files_done=5 resolved=110 errors=3343 current=lib/source-code/token-store/padded-token-cursor.js
+[2026-04-18T10:22:49Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=196.8 files_done=7 resolved=113 errors=3354 current=lib/init/autoconfig.js
+[2026-04-18T10:24:30Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=198.5 files_done=8 resolved=130 errors=3383 current=tests/lib/rules/no-lone-blocks.js
+[2026-04-18T10:26:21Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=200.3 files_done=10 resolved=131 errors=3415 current=tests/lib/cli.js
+[2026-04-18T10:52:28Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=226.4 files_done=11 resolved=156 errors=3871 current=tests/lib/shared/runtime-info.js
+[2026-04-18T10:54:54Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=228.9 files_done=12 resolved=156 errors=3913 current=tests/lib/rules/accessor-pairs.js
+[2026-04-18T11:06:15Z] [iter=4] CHECKPOINT TRIGGERED elapsed_min=240.2 files_completed=23 new_files_this_iter=13 mem_mb=1430 MB
+[2026-04-18T11:06:15Z] [iter=4] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/db40376637554d10d7b648588338fd796407885e.nq.gz triples=60623
+[2026-04-18T11:06:17Z] [iter=4] Checkpoint written, exiting with code 7
+[2026-04-18T11:06:17Z] [iter=4] PHASE END: enrich (checkpointed) elapsed_s=14413 elapsed_min=240.2 files_completed=23

@@ -1,14 +1,27 @@
 {
   "commit_sha": "db40376637554d10d7b648588338fd796407885e",
   "completed_files": [
+    "lib/init/autoconfig.js",
     "lib/init/config-initializer.js",
+    "lib/rules/capitalized-comments.js",
     "lib/rules/index.js",
+    "lib/rules/no-unneeded-ternary.js",
     "lib/rules/no-unused-vars.js",
+    "lib/source-code/token-store/padded-token-cursor.js",
+    "tests/_utils/in-memory-fs.js",
     "tests/lib/cli-engine/cli-engine.js",
     "tests/lib/cli-engine/formatters/tap.js",
+    "tests/lib/cli.js",
+    "tests/lib/eslint/eslint.js",
     "tests/lib/linter/linter.js",
+    "tests/lib/rules/accessor-pairs.js",
     "tests/lib/rules/indent.js",
+    "tests/lib/rules/no-extra-parens.js",
+    "tests/lib/rules/no-lone-blocks.js",
+    "tests/lib/rules/prefer-exponentiation-operator.js",
     "tests/lib/rules/utils/ast-utils.js",
+    "tests/lib/shared/runtime-info.js",
+    "tests/lib/source-code/source-code.js",
     "tests/lib/source-code/token-store.js",
     "tests/performance/jshint.js"
   ],
@@ -18,13 +31,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/db40376637554d10d7b648588338fd796407885e.nq.gz",
     "call_sites": 39555,
     "import_statements": 0,
-    "call_targets_resolved": 284,
+    "call_targets_resolved": 458,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 12516,
+    "errors": 16626,
     "extends_clauses": 7,
     "implements_clauses": 0,
     "import_modules_denormalized": 0,
@@ -32,5 +45,5 @@
     "extends_class_denormalized": 7,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14400
+  "elapsed_seconds": 14413
 }
