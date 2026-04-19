@@ -1,0 +1,27 @@
+[2026-04-19T03:00:30Z] === ENRICH ITERATION 9 START | repo=eslint/eslint sha=db403766 ===
+[2026-04-19T03:00:30Z] [iter=9] PHASE START: enrich repo=eslint/eslint sha=db403766 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/db403766-enrich-iter-009.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/db40376637554d10d7b648588338fd796407885e.nq.gz
+[2026-04-19T03:01:21Z] [iter=9] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-19T03:02:52Z] [iter=9] AST store loaded triples=8615566 load_secs=87 mem_mb=1043 MB
+[2026-04-19T03:02:52Z] [iter=9] Step 2: Finding LSP targets mem_mb=1043 MB
+[2026-04-19T03:02:55Z] [iter=9] LSP targets found call_sites=39555 imports=0 extends=7 implements=0 secs=3
+[2026-04-19T03:03:01Z] [iter=9] Loaded checkpoint partial graph triples=152360
+[2026-04-19T03:03:02Z] [iter=9] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1043 MB
+[2026-04-19T03:03:56Z] [iter=9] Position index built positions=626508 nodes_with_types=675466 secs=54 mem_mb=1659 MB
+[2026-04-19T03:03:56Z] [iter=9] Step 3: Starting LSP resolution mem_mb=1659 MB already_completed_types=[] already_completed_files=798
+[2026-04-19T03:03:56Z] [iter=9] Resolving target type target_type=call_site count=39555
+[2026-04-19T03:03:56Z] [iter=9] HEARTBEAT target_type=call_site elapsed_min=3.4 files_done=0 resolved=0 errors=0 current=tests/fixtures/config-hierarchy/broken/subbroken/subsubbroken/console-wrong-quotes.js
+[2026-04-19T03:04:28Z] [iter=9] HEARTBEAT target_type=call_site elapsed_min=4.0 files_done=18 resolved=1 errors=9 current=tests/lib/rules/default-case.js
+[2026-04-19T03:05:02Z] [iter=9] HEARTBEAT target_type=call_site elapsed_min=4.5 files_done=25 resolved=1 errors=19 current=tests/lib/rules/newline-after-var.js
+[2026-04-19T03:05:47Z] [iter=9] HEARTBEAT target_type=call_site elapsed_min=5.3 files_done=32 resolved=1 errors=32 current=tests/fixtures/code-path-analysis/optional-chaining--simple-4.js
+[2026-04-19T03:06:17Z] [iter=9] HEARTBEAT target_type=call_site elapsed_min=5.8 files_done=53 resolved=2 errors=41 current=lib/rules/no-negated-in-lhs.js
+[2026-04-19T03:06:48Z] [iter=9] HEARTBEAT target_type=call_site elapsed_min=6.3 files_done=73 resolved=3 errors=50 current=webpack.config.js
+[2026-04-19T03:07:19Z] [iter=9] HEARTBEAT target_type=call_site elapsed_min=6.8 files_done=108 resolved=9 errors=59 current=tests/fixtures/code-path-analysis/while--continue-label.js
+[2026-04-19T03:07:50Z] [iter=9] HEARTBEAT target_type=call_site elapsed_min=7.3 files_done=137 resolved=12 errors=68 current=tests/fixtures/cache/src/file-to-delete.js
+[2026-04-19T03:08:21Z] [iter=9] HEARTBEAT target_type=call_site elapsed_min=7.9 files_done=183 resolved=16 errors=77 current=tests/fixtures/code-path-analysis/logical--do-while-mix-2.js
+[2026-04-19T03:08:22Z] [iter=9] Target type resolved target_type=call_site resolved=20 errors=77 secs=266 mem_mb=1663 MB
+[2026-04-19T03:08:22Z] [iter=9] Resolving target type target_type=extends_clause count=7
+[2026-04-19T03:08:22Z] [iter=9] Target type resolved target_type=extends_clause resolved=0 errors=0 secs=1 mem_mb=1663 MB
+[2026-04-19T03:09:02Z] [iter=9] Step 5: Writing final enrichment file triples=944692
+[2026-04-19T03:09:24Z] [iter=9] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/db40376637554d10d7b648588338fd796407885e.nq.gz size_kb=21207
+[2026-04-19T03:09:24Z] [iter=9] Checkpoint cleared (enrichment complete)
+[2026-04-19T03:09:24Z] [iter=9] PHASE END: enrich elapsed_s=535 elapsed_min=8.9 total_triples=944692
